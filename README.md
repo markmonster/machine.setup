@@ -1,4 +1,4 @@
-# machine.setup for Monster Consultancy devices
+# Machine Setup for Monster Consultancy devices
 
 # Step 1 - Install Windows Package Manager
 
@@ -14,4 +14,4 @@ Other winget packages can be found here: https://winget.run/
 
 # Step 1.2 - Install Git
 
-`winget install -e --id Git.Git`
+`winget install -h -e --id Git.Git`
