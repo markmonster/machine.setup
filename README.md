@@ -15,3 +15,7 @@ Other winget packages can be found here: https://winget.run/
 # Step 1.2 - Install Git
 
 `winget install -h -e --id Git.Git`
+
+# Step 1.3 - Install GitHub CLI
+
+`winget install -h -e --id GitHub.cli`
