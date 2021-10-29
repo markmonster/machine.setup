@@ -8,14 +8,23 @@ https://github.com/microsoft/winget-cli/releases
 
 Other winget packages can be found here: https://winget.run/
 
-# Step 1.1 - Upgrade Existing Packages
+## Step 1.1 - Upgrade Existing Packages
 
 `winget upgrade --all`
 
-# Step 1.2 - Install Git
+# Step 2 - Install Chocolatey
+`Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`
+
+# Step 3 - Install Essentials
+
+## Step 3.1 - Install Git
 
 `winget install -h -e --id Git.Git`
 
-# Step 1.3 - Install GitHub CLI
+## Step 3.2 - Install GitHub CLI
 
 `winget install -h -e --id GitHub.cli`
+
+## Step 3.3 - Prepare Sources Path
+
+`New-Item -ItemType Directory -Force -Path D:\Sources`
