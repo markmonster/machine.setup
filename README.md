@@ -1,5 +1,7 @@
 # Machine Setup for Monster Consultancy devices
 
+Open an elevated Windows Powershell window
+
 # Step 1 - Install Windows Package Manager
 
 Take a late release from github, while it's not yet available in the Microsoft Store.
