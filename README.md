@@ -45,43 +45,43 @@ git clone https://github.com/markmonster/machine.setup.git
 
 ## Step 4 - Install applications
 
+## Step 4.1 - Scripted
 ```ps
 winget install -h -e --id Microsoft.PowerShell
 winget install -h -e --id Microsoft.WindowsTerminal
 winget install -h -e --id Fork.Fork
 winget install -h -e --id Microsoft.VisualStudioCode
-#choco install -y visualstudio2019professional
-#choco install -y visualstudio2019-workload-azure
-#choco install -y visualstudio2019-workload-netcoretools
-#choco install -y visualstudio2019-workload-netweb
+winget install Microsoft.VisualStudio.2019.Professional --silent --override "--wait --quiet --addProductLang En-us --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetCoreTools --add Microsoft.VisualStudio.Workload.NetWeb --add Microsoft.VisualStudio.Workload.NetCrossPlat"
 winget install -h -e --id JetBrains.dotUltimate
 winget install -h -e --id 7zip.7zip
 winget install -h -e --id Typora.Typora
-#affinity designer
-#agent ransack
+choco install agentransack
 winget install -h -e --id Microsoft.AzureCLI
 winget install -h -e --id Microsoft.AzureDataStudio
 winget install -h -e --id Bitwarden.Bitwarden
-# Bitwarden Edge Extension
-#Dell PowerManager
-#Dell SupportAssist
 winget install -h -e --id Docker.DockerDesktop
 winget install -h -e --id Doxie.Doxie
 winget install -h -e --id Elgato.StreamDeck
 winget install -h -e --id Telerik.Fiddler
 winget install -h -e --id Logitech.Options
-#Logitech presentation
+choco install logitech-presentation
 winget install -h -e --id Logitech.CameraSettings
 winget install -h -e --id Microsoft.Teams
 winget install -h -e --id 9WZDNCRFJB3H #Microsoft ToDo
-#MT940 Creator
 winget install -h -e --id OpenJS.NodeJS
 winget install -h -e --id OBSProject.OBSStudio
-#Office 365
 winget install -h -e --id Microsoft.PowerToys
-#Paint.NET
+choco install paint.net
 winget install -h -e --id XSplit.VCam
 ```
+## Step 4.2 Manual
+- Office 365
+- MT940 Creator
+- Bitwarden Edge Extension
+- Dell PowerManager
+- Dell SupportAssist
+- Affinity Designer
+- Davinci Resolve
 
 ## Step 5 - Configure Windows Terminal
 
