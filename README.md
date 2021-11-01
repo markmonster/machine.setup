@@ -59,28 +59,28 @@ winget install -h -e --id 7zip.7zip
 winget install -h -e --id Typora.Typora
 #affinity designer
 #agent ransack
-Microsoft.AzureCLI
-Microsoft.AzureDataStudio
-Bitwarden.Bitwarden
+winget install -h -e --id Microsoft.AzureCLI
+winget install -h -e --id Microsoft.AzureDataStudio
+winget install -h -e --id Bitwarden.Bitwarden
 # Bitwarden Edge Extension
 #Dell PowerManager
 #Dell SupportAssist
-Docker.DockerDesktop
-Doxie.Doxie
-Elgato.StreamDeck
-Telerik.Fiddler
-Logitech.Options
+winget install -h -e --id Docker.DockerDesktop
+winget install -h -e --id Doxie.Doxie
+winget install -h -e --id Elgato.StreamDeck
+winget install -h -e --id Telerik.Fiddler
+winget install -h -e --id Logitech.Options
 #Logitech presentation
-Logitech.CameraSettings
-Microsoft.Teams
-9WZDNCRFJB3H #Microsoft ToDo
+winget install -h -e --id Logitech.CameraSettings
+winget install -h -e --id Microsoft.Teams
+winget install -h -e --id 9WZDNCRFJB3H #Microsoft ToDo
 #MT940 Creator
-OpenJS.NodeJS
-OBSProject.OBSStudio
+winget install -h -e --id OpenJS.NodeJS
+winget install -h -e --id OBSProject.OBSStudio
 #Office 365
-Microsoft.PowerToys
+winget install -h -e --id Microsoft.PowerToys
 #Paint.NET
-XSplit.VCam
+winget install -h -e --id XSplit.VCam
 ```
 
 ## Step 5 - Configure Windows Terminal
