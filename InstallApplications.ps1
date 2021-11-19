@@ -60,11 +60,11 @@ Install('Microsoft.PowerShell')
 Install('Microsoft.WindowsTerminal')
 Install('Fork.Fork')
 Install('Microsoft.VisualStudioCode')
-If(-Not (IsInstalled('Microsoft.VisualStudio.2019.Professional'))) {
-        winget install Microsoft.VisualStudio.2019.Professional --silent --override "--wait --quiet --addProductLang En-us --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetCoreTools --add Microsoft.VisualStudio.Workload.NetWeb --add Microsoft.VisualStudio.Workload.NetCrossPlat"
+If(-Not (IsInstalled('Microsoft.VisualStudio.2022.Professional'))) {
+        winget install Microsoft.VisualStudio.2022.Professional --silent --override "--wait --quiet --addProductLang En-us --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetCoreTools --add Microsoft.VisualStudio.Workload.NetWeb --add Microsoft.VisualStudio.Workload.NetCrossPlat"
 }
 Else {
-        Write-Host -ForegroundColor Green "Microsoft.VisualStudio.2019.Professional is already installed."
+        Write-Host -ForegroundColor Green "Microsoft.VisualStudio.2022.Professional is already installed."
 }
 If(-Not (Test-Path "$ENV:LOCALAPPDATA\Jetbrains\Installations")) {
         winget install -h -e --id 'JetBrains.dotUltimate'
@@ -95,4 +95,14 @@ Install('OpenJS.NodeJS')
 Install('OBSProject.OBSStudio')
 Install('Microsoft.PowerToys')
 choco install -y paint.net
+choco install -y jetbrainsmononf
 Install('XSplit.VCam')
+Install('JanDeDobbeleer.OhMyPosh')
+
+Install-Module -Name PSReadLine -AllowPrerelease -Confirm:$False -Force
+Write-Host -ForegroundColor Green "PSReadLine installed."
+Install-Module -Name PSKubectlCompletion -Confirm:$False -Force
+Write-Host -ForegroundColor Green "PSKubectlCompletion installed."
+Install-Module -Name Terminal-Icons -Confirm:$False -Force
+Write-Host -ForegroundColor Green "Terminal-Icons installed."
+Write-Host -ForegroundColor Green "Terminal-Icons installed."
