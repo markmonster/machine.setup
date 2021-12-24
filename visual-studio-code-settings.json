@@ -1,0 +1,70 @@
+{
+    "git.autofetch": true,
+    "gitlens.keymap": "alternate",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "files.autoSave": "afterDelay",
+    "workbench.editor.revealIfOpen": true,
+    "workbench.startupEditor": "none",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#f37a4c",
+        "gitDecoration.ignoredResourceForeground": "#3c3c3c"
+    },
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "terminal.integrated.cursorBlinking": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "JetBrainsMono NF, JetBrains Mono, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "[markdown]": {
+        "editor.minimap.enabled": true,
+        "editor.quickSuggestions": false
+    },
+    "npm.enableScriptExplorer": true,
+    "breadcrumbs.enabled": true,
+    "editor.suggestSelection": "first",
+    "powershell.powerShellDefaultVersion": "PowerShell Core 6 (x64)",
+    "terminal.integrated.showExitAlert": false,
+    "debug.inlineValues": true,
+    "debug.openExplorerOnEnd": true,
+    "workbench.iconTheme": "vscode-icons",
+    "[jsonc]": {
+
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "gitlens.codeLens.scopes": [
+            "document"
+        ]
+    },
+    "[json]": {
+
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "gitlens.codeLens.scopes": [
+            "document"
+        ]
+    },
+    "editor.formatOnPaste": true,
+    "explorer.confirmDragAndDrop": false,
+    "vscode-edge-devtools.headless": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "vscode-edge-devtools.mirrorEdits": true
+}

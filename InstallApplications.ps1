@@ -73,12 +73,13 @@ Else {
         Write-Host -ForegroundColor Green "JetBrains.dotUltimate is already installed."
 }
 Install('7zip.7zip')
-If(-Not (Test-Path "$ENV:LOCALAPPDATA\Programs\Typora\Typora.exe")) {
-        winget install -h -e --id 'Typora.Typora'
-}
-Else {
-        Write-Host -ForegroundColor Green "Typora.Typora is already installed."
-}
+
+#If(-Not (Test-Path "$ENV:LOCALAPPDATA\Programs\Typora\Typora.exe")) {
+#        winget install -h -e --id 'Typora.Typora'
+#}
+#Else {
+#        Write-Host -ForegroundColor Green "Typora.Typora is already installed."
+#}
 
 choco install -y agentransack
 Install('Microsoft.AzureCLI')
@@ -87,7 +88,7 @@ Install('Bitwarden.Bitwarden')
 Install('Docker.DockerDesktop')
 Install('Doxie.Doxie')
 Install('Elgato.StreamDeck')
-Install('Telerik.Fiddler')
+#Install('Telerik.Fiddler')
 Install('Logitech.Options')
 Install('Logitech.CameraSettings')
 Install('Microsoft.Teams')
@@ -96,7 +97,7 @@ Install('OBSProject.OBSStudio')
 Install('Microsoft.PowerToys')
 choco install -y paint.net
 choco install -y jetbrainsmononf
-Install('XSplit.VCam')
+#Install('XSplit.VCam')
 Install('JanDeDobbeleer.OhMyPosh')
 
 Install-Module -Name PSReadLine -AllowPrerelease -Confirm:$False -Force
@@ -104,5 +105,4 @@ Write-Host -ForegroundColor Green "PSReadLine installed."
 Install-Module -Name PSKubectlCompletion -Confirm:$False -Force
 Write-Host -ForegroundColor Green "PSKubectlCompletion installed."
 Install-Module -Name Terminal-Icons -Confirm:$False -Force
-Write-Host -ForegroundColor Green "Terminal-Icons installed."
 Write-Host -ForegroundColor Green "Terminal-Icons installed."

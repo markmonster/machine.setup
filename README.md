@@ -49,10 +49,12 @@ git clone https://github.com/markmonster/machine.setup.git
 ```ps
 .\InstallApplications.ps1
 ```
+
 ## Step 4.2 Manual
 - Office 365
-- MT940 Creator
 - Bitwarden Edge Extension
+- Save To Pocket Edge Extension
+- Super Agent Edge Extension
 - Dell PowerManager
 - Dell SupportAssist
 - Affinity Designer
@@ -62,3 +64,4 @@ git clone https://github.com/markmonster/machine.setup.git
 .\ConfigureWindowsTerminal.ps1
 
 ## Step 6 - Configure Visual Studio Code
+.\ConfigureVisualStudioCode.ps1
