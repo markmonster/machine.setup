@@ -99,6 +99,7 @@ choco install -y paint.net
 choco install -y jetbrainsmononf
 #Install('XSplit.VCam')
 Install('JanDeDobbeleer.OhMyPosh')
+Install('Files-Community.Files')
 
 Install-Module -Name PSReadLine -AllowPrerelease -Confirm:$False -Force
 Write-Host -ForegroundColor Green "PSReadLine installed."
